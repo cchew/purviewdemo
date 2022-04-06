@@ -11,7 +11,8 @@ function getUserPrincipalId() {
 
 function selectLocation() {
     $locationList='australiaeast', 'brazilsouth', 'canadacentral', 'centralindia', 'eastus', 'eastus2', 'southcentralus', 'southeastasia', 'uksouth', 'westeurope'
-    $location = Get-Random -InputObject $locationList
+    #$location = Get-Random -InputObject $locationList
+    $location = 'australiaeast'
     Return $location
 }
 
