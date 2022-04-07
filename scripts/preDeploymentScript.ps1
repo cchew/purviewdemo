@@ -77,8 +77,7 @@ function getDeployment([string]$accessToken, [string]$subscriptionId, [string]$r
 $tenantId = (Get-AzContext).Tenant.Id
 $subscriptionId = (Get-AzContext).Subscription.Id
 $principalId = getUserPrincipalId
-#$suffix = -join ((48..57) + (97..122) | Get-Random -Count 5 | ForEach-Object {[char]$_})
-$suffix = 'demo'
+$suffix = -join ((48..57) + (97..122) | Get-Random -Count 5 | ForEach-Object {[char]$_})
 $location = selectLocation
 
 # Create Resource Group
